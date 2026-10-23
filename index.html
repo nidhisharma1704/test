@@ -3,10 +3,95 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hello HTML</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Colorful Webpage</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background-color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            max-width: 450px;
+            margin: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #6c5ce7;
+            font-size: 36px;
+        }
+
+        p {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .highlight {
+            color: #e84393;
+            font-weight: bold;
+        }
+
+        button {
+            background: linear-gradient(90deg, #ff7675, #fd79a8);
+            color: white;
+            border: none;
+            padding: 14px 28px;
+            border-radius: 30px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        button:hover {
+            transform: scale(1.08);
+        }
+
+        footer {
+            margin-top: 25px;
+            color: #888;
+            font-size: 13px;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Hello, HTML!</h1>
-    <p>This is my first HTML page.</p>
+    <div class="card">
+        <h1>🌈 Hello, HTML!</h1>
+
+        <p>
+            Welcome to my <span class="highlight">colorful webpage!</span>
+        </p>
+
+        <p>
+            I'm learning HTML, CSS, and web design.
+            Every great website starts with a little creativity!
+        </p>
+
+        <button onclick="showMessage()">
+            Click Me!
+        </button>
+
+        <footer>
+            Made with ❤️ using HTML & CSS
+        </footer>
+    </div>
+
+    <script>
+        function showMessage() {
+            alert("Hello! Welcome to my colorful webpage! 🎉");
+        }
+    </script>
 </body>
 </html>
