@@ -107,6 +107,14 @@
         function showMessage() {
             alert("Hello! Welcome to my colorful webpage! 🎉");
         }
+		// Hardcoded cookies
+    document.cookie = "username=testuser; path=/";
+    document.cookie = "theme=dark; path=/";
+    document.cookie = "language=en; path=/";
+    document.cookie = "region=asia-south1; path=/";
+
+    // Display cookies
+    console.log(document.cookie);
     </script>
 </body>
 </html>
